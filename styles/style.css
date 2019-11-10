@@ -134,6 +134,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+main {
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
 
 nav {
     overflow: hidden;
@@ -156,13 +160,19 @@ nav a:hover {
     color: black;
 }
 
-.dropdown-content {
+ul.breadcrumb {
     float: right;
+    list-style: none;
 }
-
-main {
-    margin-top: 45px;
-    margin-bottom: 80px;
+ul.breadcrumb li {
+    display: inline;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: red;
+}
+ul.breadcrumb li a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 578px) {
