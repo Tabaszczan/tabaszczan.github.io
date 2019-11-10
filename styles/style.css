@@ -1,0 +1,259 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #2F3540;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #F2EDE4;
+    color: black;
+}
+
+.dropdown-content {
+    float: right;
+}
+
+main {
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 578px) {
+    nav > a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    main {
+        margin-top: 45px;
+    }
+}
+
+.omnie{
+    background-image: url(/images/Tlo2.jpg);
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.omnie .tekst{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+.omnie h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.omnie h3{
+    margin-top: 0px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.kontakt{
+    margin-top: 50px;
+    text-align: center;
+}
+h6{
+    font-size: 18px;
+    font-weight:bolder;
+}
+form{
+    width: 33%;
+    display: inline-block;
+    margin-top: 20px;  
+}
+input[type=text]{
+    float: left;
+    width: calc(100% - 30%);
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid #666A73;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type=text]:focus {
+  border: 3px solid #666A73;
+}
+textarea{
+    float: left;
+    width: 95%;
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid #666A73;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type=submit]{
+    width: 6em;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #D9D1C7;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    padding-right: 6px;
+}
