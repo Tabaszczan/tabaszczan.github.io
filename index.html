@@ -43,13 +43,19 @@
         </section>
         <section id="kontakt" class="kontakt">
             <h6>Chcesz zadać mi pytanie? Śmiało:</h6>
-            <form>
-                <label for="Nazwa">Imie:</label><br>
-                <input type="text" name="Nazwa" placeholder="Imie"><br><br><br>
-                <label for="Mail">Email:</label><br>
-                <input type="text" name="Mail" placeholder="Email"><br><br><br>
-                <label for="Wiadomosc">Wiadomość:</label><br>
-                <textarea name="Wiadomosc" rows="15" placeholder="Napisz swoją wiadomość tutaj"></textarea>
+            <form action="#">
+                <label for="nazwa">
+                    <abbr title="required">*</abbr>Imie:
+                </label><br>
+                <input type="text" name="imie" id="nazwa" placeholder="Imie"><br><br><br>
+                <label for="mail">
+                    <abbr title="required">*</abbr>Email:
+                </label><br>
+                <input type="email" name="usermail" id="mail" placeholder="Email"><br><br><br>
+                <label for="mess">
+                    <abbr title="required">*</abbr>Wiadomość:
+                </label><br>
+                <textarea name="Wiadomosc" id="mess" rows="15" placeholder="Napisz swoją wiadomość tutaj"></textarea>
                 <input type="submit" name="Submit" value="Wyślij!" />
             </form>
         </section>

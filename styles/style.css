@@ -228,7 +228,7 @@ form label {
     text-align: left;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
     float: left;
     width: calc(100% - 30%);
     padding: 5px;
@@ -238,7 +238,7 @@ input[type=text] {
     font-family: 'Open Sans', sans-serif;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus  {
     border: 3px solid #666A73;
 }
 
