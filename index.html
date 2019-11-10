@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PL">
+<html lang="pl-PL">
 
 <head>
     <meta charset="utf-8">
@@ -12,9 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="/images/icons8-m-26.png" />
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-    </style>
 </head>
 
 <body>
@@ -23,7 +20,7 @@
             MATEUSZ PODOLAK
         </a>
         <div class="dropdown-content">
-            <a href="#">GŁÓWNA</a>
+            <a href="#" target="_self">GŁÓWNA</a>
             <a href="#omnie">O MNIE</a>
             <a href="#projekty">PROJEKTY</a>
             <a href="#kontakt">KONTAKT</a>
@@ -47,12 +44,12 @@
         <section id="kontakt" class="kontakt">
             <h6>Chcesz zadać mi pytanie? Śmiało:</h6>
             <form>
-                <label>Imie:</label><br>
-                <input type="text" name="imie" placeholder="Imie"><br><br><br>
-                <label>Email:</label><br>
-                <input type="text" name="email" placeholder="Email"><br><br><br>
-                <label>Wiadomość:</label><br>
-                <textarea name="wiadomosc" rows="15" placeholder="Napisz swoją wiadomość tutaj"></textarea>
+                <label for="Nazwa">Imie:</label><br>
+                <input type="text" name="Nazwa" placeholder="Imie"><br><br><br>
+                <label for="Mail">Email:</label><br>
+                <input type="text" name="Mail" placeholder="Email"><br><br><br>
+                <label for="Wiadomosc">Wiadomość:</label><br>
+                <textarea name="Wiadomosc" rows="15" placeholder="Napisz swoją wiadomość tutaj"></textarea>
                 <input type="submit" name="Submit" value="Wyślij!" />
             </form>
         </section>

@@ -102,6 +102,11 @@ section {
     display: block;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
 body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
@@ -217,9 +222,12 @@ form {
     display: inline-block;
     margin-top: 20px;
 }
-form label{
+
+form label {
     float: left;
+    text-align: left;
 }
+
 input[type=text] {
     float: left;
     width: calc(100% - 30%);
