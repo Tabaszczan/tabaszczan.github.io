@@ -195,13 +195,13 @@ main {
     color: white;
 }
 
-.omnie h1 {
+h1 {
     font-size: 50px;
     letter-spacing: 5px;
     margin-bottom: 10px;
 }
 
-.omnie h3 {
+h2 {
     margin-top: 0px;
     font-size: 25px;
     letter-spacing: 3px;
@@ -212,8 +212,9 @@ main {
     text-align: center;
 }
 
-h6 {
-    font-size: 18px;
+.kontakt h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
     font-weight: bolder;
 }
 
