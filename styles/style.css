@@ -134,6 +134,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 main {
     margin-top: 45px;
     margin-bottom: 80px;
@@ -164,6 +165,7 @@ ul.breadcrumb {
     float: right;
     list-style: none;
 }
+
 ul.breadcrumb li {
     display: inline;
 }
@@ -212,53 +214,63 @@ h2 {
     font-size: 25px;
     letter-spacing: 3px;
 }
-.projekty h2{
+
+.projekty h2 {
     letter-spacing: 1px;
     font-size: 40px;
     font-weight: bolder;
     text-align: center;
 
 }
-.projekty h3{
+
+.projekty h3 {
     text-align: center;
     font-weight: bolder;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
-    
+
 }
-.pierwszyA video{
+
+.pierwszyA video {
     float: left;
     margin-right: 20px;
     padding-left: 10px;
 }
-.pierwszyA .tekst{
+
+.pierwszyA .tekst {
     text-align: center;
     padding: 30px;
     line-height: 30px;
 }
-.tekst h4{
+
+.tekst h4 {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
-.tekst p{
+
+.tekst p {
     text-align: left;
 }
-.tekst li{
+
+.tekst li {
     text-align: left;
 }
-.drugiA .tekst{
+
+.drugiA .tekst {
     float: left;
     width: 50%;
     text-align: center;
     padding: 30px;
     line-height: 30px;
 }
-.drugiA .kod{
+
+.drugiA .kod {
     float: right;
     width: calc(50% - 60px);
 }
+
 .kontakt {
     margin-top: 50px;
     text-align: center;
