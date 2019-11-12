@@ -47,11 +47,15 @@
                     </p>
                     <p>
                         Na ten moment stworzone rzeczy to:
+                    </p>
+                    <ul>    
                         <li> Poruszanie się gracza</li>
                         <li>Wiele skoków z możliwością zmiany ich ilości</li>
                         <li>Zablokowanie kamery</li>
                         <li>Tło które się porusza dla efektu ruchu</li>
-                    </p>
+                    </ul>
+                    
+                    
                     <p>
                         Rzeczy do zrobienia jest za dużo żeby wypisać je w prostej liście. Grafiki robione ręcznie zajmują jednak dużo czasu z powodu braku umiejętności tworzenia grafik.
                     </p>
@@ -68,15 +72,192 @@
                     <p>
                         Czyli w skrócie szukamy optymalnej ścieżki z punktu A do punktu B.
                     </p>
+                    <h4>ZAŁOŻENIA I KROKI ALGORYTMU</h4>
+                    <ol>
+                        <li>Ustalamy sposób poruszania się, koszt jego poszczególnych ruchów oraz kolejność przeszukiwania pól wokół aktualnej pozycji.</li>
+                        <li>Dobieramy heurystykę h, spełniająca warunek dopuszczalności.</li>
+                        <li>Uzgadniamy sposoby rozwiązywania konfliktów, powstających podczas eksploracji siatki.</li>
+                        <li>Wskazujemy punkt startowy i docelowy.</li>
+                        <li> Tworzymy dwie pomocnicze listy, listę otwartą inicjowaną zborem pustym, która będzie zawierała kratki aktualnie rozważane jako pola do ekspansji oraz listę zamkniętą inicjowaną polem startowym, do której trafią pola odwiedzone, znikające jednocześnie z listy otwartej.</li>
+                        <li>Kratki otaczające pole ostatnio dodane do listy zamkniętej, które możemy odwiedzić trafiają na listę otwartą i zachowują informację o kratce rodzicu, za pośrednictwem, której trafiły na listę otwartą; wyliczana jest dla nich wartość funkcji f, w przypadku gdy już posiadają tę wartość obliczoną za pośrednictwem innego pola dodanego wcześniej do listy zamkniętej, porównujemy wyliczaną wartość z aktualną i zmieniamy rodzica w przypadku gdy oszacowany koszt f dotarcia do celu jest mniejszy od poprzedniego.</li>
+                        <li>Do listy zamkniętej trafia kratka z listy otwartej, której wartość f jest najmniejsza (konflikty rozwiązywane są hierarchiczne, wybieramy spośród kratek o tym samym oszacowaniu f, pole odwiedzone najpóźniej).</li>
+                        <li>Jeżeli cel nie został osiągnięty i lista otwarta zawiera przynajmniej jeden element wykonujemy skok do kroku 6.</li>
+                        <li>Algorytm może zakończyć się dwoma scenariuszami:
+                            <ol type="a">
+                                <li>jeżeli cel zostałosiągnięty, wracamy wstecz po kolejnych kratkach rodzicach do kratki start, wyznaczając w ten sposób optymalną ścieżkę od startu do celu,</li>
+                                <li> gdy lista otwarta nie zawiera żadnego elementu a cel nie został osiągnięty, zwracany jest komunikat o niemożliwości dotarcia do celu.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h4>PRZYKŁAD OBRAZKOWY</h4>
+                    <img src="images/AstarExample.gif" alt="Przykład działania algorytmu A* dla grafu, którego wierzchołkami są miasta, wagami krawędzi odległości drogowe, a heurystyka h(x) jest odległością w linii prostej. Zielony – wierzchołek początkowy, niebieski – wierzchołek docelowy"><br>
+                    <span style="font-size: 10px;">
+                        żródło <a href="https://pl.wikipedia.org/wiki/Algorytm_A*">Wikipedia</a>
+                    </span>
                 </div>
                 <div class="kod">
                     <script src="https://gist.github.com/Tabaszczan/d1bb1d69eb19add1e5d41343a2ec4489.js"></script>
                 </div>
             </article>
             <div style="clear: both;"></div>
+            <article class="trzeciA">
+                <h3>TABELKA Z POSTACIAMI Z GRY THE BINDING OF ISAAC</h3>
+                <div class="tabelka">
+                    <table class="tabela">
+                        <tr>
+                            <th>Nazwa</th>
+                            <th>Isaac</th> 
+                            <th>Magdalene</th>
+                            <th>Cain</th>
+                            <th colspan="2">Judas<br>Zwykły Dark</th>
+                            <th>???</th>
+                            <th>Eve</th>
+                            <th>Samson</th>
+                            <th>Azazel</th>
+                            <th colspan="2">Lazarus<br>Zwykły Risen</th>
+                            <th>Eden</th>
+                        </tr>
+                        <tr>
+                            <td>Życie</td>
+                            <td>3x<img src="images/redH.png" alt=""></td>
+                            <td>4x<img src="images/redH.png" alt=""></td>
+                            <td>2x<img src="images/redH.png" alt=""></td>
+                            <td>1x<img src="images/redH.png" alt=""></td>
+                            <td>2x<img src="images/blackH.png" alt=""></td>
+                            <td>3x<img src="images/blueH.png" alt=""></td>
+                            <td>2x<img src="images/redH.png" alt=""></td>
+                            <td>3x<img src="images/redH.png" alt=""></td>
+                            <td>3x<img src="images/blackH.png" alt=""></td>
+                            <td>3x<img src="images/redH.png" alt=""></td>
+                            <td>1x<img src="images/redH.png" alt=""></td>
+                            <td>3x<img src="images/redH.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Obrażenia</td>
+                            <td>3.5 * 1.00</td>
+                            <td>3.5 * 1.00</td>
+                            <td>3.5 * 1.20</td>
+                            <td>3.5 * 1.35</td>
+                            <td>3.5 * 2.00</td>
+                            <td>3.5 * 1.05</td>
+                            <td>3.5 * 0.75(*1.00 gdy 1x<img src="images/redH.png" alt="">) </td>
+                            <td>3.5 * 1.00</td>
+                            <td>3.5 * 1.50</td>
+                            <td>3.5 * 1.00</td>
+                            <td>3.5 * 1.20</td>
+                            <td>3.5 ± 1.0 * 1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Łzy</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>- 0.05</td>
+                            <td>+ 0.5, x1/3</td>
+                            <td>+ 0</td>
+                            <td>+ 0</td>
+                            <td>± 0.75</td>
+                        </tr>
+                        <tr>
+                            <td>Prędkość strzałów</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1.31</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1 ± 0.25</td>
+                        </tr>
+                         <tr>
+                            <td>Zasięg</td>
+                            <td>23.75</td>
+                            <td>23.75</td>
+                            <td>17.75</td>
+                            <td>23.75</td>
+                            <td>23.75</td>
+                            <td>23.75</td>
+                            <td>23.75</td>
+                            <td>18.75</td>
+                            <td>17.75</td>
+                            <td>17.75</td>
+                            <td>23.75</td>
+                            <td>23.75 ± 5.00</td>
+                        </tr>
+                         <tr>
+                            <td>Prędkość</td>
+                            <td>1.0</td>
+                            <td>0.85</td>
+                            <td>1.3</td>
+                            <td>1.0</td>
+                            <td>1.1</td>
+                            <td>1.1</td>
+                            <td>1.23</td>
+                            <td>1.1</td>
+                            <td>1.25</td>
+                            <td>1.0</td>
+                            <td>1.25</td>
+                            <td>1.0 ± 0.15</td>
+                        </tr>
+                         <tr>
+                            <td>Szczęście</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>-1</td>
+                            <td>0</td>
+                            <td>0 ± 1</td>
+                        </tr>
+                         <tr>
+                            <td>Zasoby początkowe</td>
+                            <td>1x Bomba</td>
+                            <td>Tabletka prędkość</td>
+                            <td>Klips do papieru</td>
+                            <td>3x moneta</td>
+                            <td>Nic</td>
+                            <td>Nic</td>
+                            <td>Nic</td>
+                            <td>Serce dziecka</td>
+                            <td>Karta 0 - Oszust</td>
+                            <td>1x Tabletka</td>
+                            <td>Nic</td>
+                            <td>Wybierane losowo</td>
+                        </tr>
+                         <tr>
+                            <td>Przedmioty początkowe</td>
+                            <td>D6</td>
+                            <td>Serce Yum</td>
+                            <td>Szczęśliwa stopa</td>
+                            <td>Książka Beliara</td>
+                            <td>Nic</td>
+                            <td>Odchody</td>
+                            <td>Martwy ptak</td>
+                            <td>Żądza krwi</td>
+                            <td>Latanie</td>
+                            <td>Nic</td>
+                            <td>Anemia</td>
+                            <td>Wybierane losowo</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
         </section>
         <section id="kontakt" class="kontakt">
-            <h2>Chcesz zadać mi pytanie? Śmiało:</h2>
+            <h2>Chcesz zadać mi pytanie? Śmiało!</h2>
             <form action="#">
                 <label for="nazwa">
                     <abbr title="required">*</abbr>Imie:

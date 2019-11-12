@@ -161,12 +161,12 @@ nav a:hover {
     color: black;
 }
 
-ul.breadcrumb {
+nav ul.breadcrumb {
     float: right;
     list-style: none;
 }
 
-ul.breadcrumb li {
+nav ul.breadcrumb li {
     display: inline;
 }
 
@@ -239,9 +239,11 @@ h2 {
 }
 
 .pierwszyA .tekst {
+
     text-align: center;
     padding: 30px;
     line-height: 30px;
+
 }
 
 .tekst h4 {
@@ -258,6 +260,24 @@ h2 {
     text-align: left;
 }
 
+.tekst ul {
+    list-style-image: url(../images/strzalka0.png);
+}
+
+.tekst ul li:hover {
+    list-style-image: url(../images/strzalka1.png);
+    font-weight: 1000;
+}
+
+.tekst ol {
+    list-style: decimal;
+}
+
+.tekst ol ol {
+    list-style: lower-latin;
+    padding-left: 20px;
+}
+
 .drugiA .tekst {
     float: left;
     width: 50%;
@@ -266,11 +286,44 @@ h2 {
     line-height: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .drugiA .kod {
     float: right;
     width: calc(50% - 60px);
 }
-
+.tabela{
+    margin-left: 5%;
+}
+.tabela table{
+    border-spacing: 5px;
+    
+}
+.tabela table,
+.tabela th,
+.tabela td {
+     border: 1px solid white;
+    border-collapse: collapse;
+}
+.tabelka th,
+.tabelka td{
+    padding: 15px;
+    text-align: left;
+}
+.tabela th{
+    text-align: left;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.tabelka tr:nth-child(even){
+    background-color: #fee;
+}
+.tabelka tr:nth-child(odd){
+    background-color: #eff;
+}
 .kontakt {
     margin-top: 50px;
     text-align: center;
