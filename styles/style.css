@@ -224,6 +224,7 @@ h2 {
     font-weight: bolder;
     font-size: 25px;
     margin-top: 20px;
+    margin-bottom: 10px;
     
 }
 .pierwszyA video{
@@ -235,7 +236,6 @@ h2 {
     text-align: center;
     padding: 30px;
     line-height: 30px;
-
 }
 .tekst h4{
     font-size: 20px;
@@ -250,11 +250,14 @@ h2 {
 }
 .drugiA .tekst{
     float: left;
-     width: 50%;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
 }
 .drugiA .kod{
     float: right;
-    width: 50%;
+    width: calc(50% - 60px);
 }
 .kontakt {
     margin-top: 50px;
