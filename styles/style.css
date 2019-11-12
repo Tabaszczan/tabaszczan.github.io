@@ -167,13 +167,7 @@ ul.breadcrumb {
 ul.breadcrumb li {
     display: inline;
 }
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: red;
-}
-ul.breadcrumb li a {
-  text-decoration: none;
-}
+
 
 @media screen and (max-width: 578px) {
     nav > a {
@@ -194,6 +188,7 @@ ul.breadcrumb li a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .omnie .tekst {
@@ -204,6 +199,7 @@ ul.breadcrumb li a {
     transform: translate(-50%, -50%);
     color: white;
 }
+
 
 h1 {
     font-size: 50px;
@@ -216,14 +212,57 @@ h2 {
     font-size: 25px;
     letter-spacing: 3px;
 }
+.projekty h2{
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
 
+}
+.projekty h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+.pierwszyA video{
+    float: left;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+.pierwszyA .tekst{
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+
+}
+.tekst h4{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.tekst p{
+    text-align: left;
+}
+.tekst li{
+    text-align: left;
+}
+.drugiA .tekst{
+    float: left;
+     width: 50%;
+}
+.drugiA .kod{
+    float: right;
+    width: 50%;
+}
 .kontakt {
     margin-top: 50px;
     text-align: center;
 }
 
 .kontakt h2 {
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 0px;
     font-weight: bolder;
 }
