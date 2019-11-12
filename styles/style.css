@@ -295,7 +295,7 @@ a {
     width: calc(50% - 60px);
 }
 .tabela{
-    margin-left: 5%;
+    width: 100%;
 }
 .tabela table{
     border-spacing: 5px;
