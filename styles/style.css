@@ -161,6 +161,10 @@ nav a:hover {
     color: black;
 }
 
+nav a:active{
+    background-color: yellow;
+}
+
 nav ul.breadcrumb {
     float: right;
     list-style: none;
@@ -223,7 +227,7 @@ h2 {
 
 }
 
-.projekty h3 {
+h3 {
     text-align: center;
     font-weight: bolder;
     font-size: 25px;
@@ -294,36 +298,44 @@ a {
     float: right;
     width: calc(50% - 60px);
 }
-.tabela{
+
+.tabela {
     width: 100%;
 }
-.tabela table{
+
+.tabela table {
     border-spacing: 5px;
-    
+
 }
+
 .tabela table,
 .tabela th,
 .tabela td {
-     border: 1px solid white;
+    border: 1px solid white;
     border-collapse: collapse;
 }
+
 .tabelka th,
-.tabelka td{
+.tabelka td {
     padding: 15px;
     text-align: left;
 }
-.tabela th{
+
+.tabela th {
     text-align: left;
     font-weight: bold;
     background-color: black;
     color: white;
 }
-.tabelka tr:nth-child(even){
+
+.tabelka tr:nth-child(even) {
     background-color: #fee;
 }
-.tabelka tr:nth-child(odd){
+
+.tabelka tr:nth-child(odd) {
     background-color: #eff;
 }
+
 .kontakt {
     margin-top: 50px;
     text-align: center;
@@ -347,7 +359,16 @@ form label {
 }
 
 input[type=text],
-input[type=email] {
+input[type=email]{
+    float: left;
+    width: calc(100% - 30%);
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid #666A73;
+    font-family: 'Open Sans', sans-serif;
+}
+select{
     float: left;
     width: calc(100% - 30%);
     padding: 5px;
@@ -361,7 +382,16 @@ input[type=text]:focus,
 input[type=email]:focus {
     border: 3px solid #666A73;
 }
-
+select:focus{
+     border: 3px solid #666A73;
+}
+input[type=radio]{
+    float: left;
+}
+span{
+    margin-right: calc(100% - 110px);
+    font-family: 'Open Sans', sans-serif;   
+}
 textarea {
     float: left;
     width: 95%;
@@ -395,4 +425,43 @@ footer a {
     text-decoration: none;
     color: black;
     padding-right: 6px;
+}
+
+.navigation li, .navigation a{
+    height: 80px;
+    width: 50px;
+    margin-right: 50px;
+    display: inline-block;
+}
+.home a{
+    background: url(../images/house.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    left 0;
+}
+.home a:hover{
+    background: url(../images/house2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.close a{
+    background: url(../images/close2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.close a:hover{
+    background: url(../images/close1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.magic a{
+    background: url(../images/magic1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.magic a:hover{
+    background: url(../images/magic2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
