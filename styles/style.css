@@ -161,7 +161,7 @@ nav a:hover {
     color: black;
 }
 
-nav a:active{
+nav a:active {
     background-color: yellow;
 }
 
@@ -359,7 +359,7 @@ form label {
 }
 
 input[type=text],
-input[type=email]{
+input[type=email] {
     float: left;
     width: calc(100% - 30%);
     padding: 5px;
@@ -368,7 +368,8 @@ input[type=email]{
     border: 2px solid #666A73;
     font-family: 'Open Sans', sans-serif;
 }
-select{
+
+select {
     float: left;
     width: calc(100% - 30%);
     padding: 5px;
@@ -382,16 +383,20 @@ input[type=text]:focus,
 input[type=email]:focus {
     border: 3px solid #666A73;
 }
-select:focus{
-     border: 3px solid #666A73;
+
+select:focus {
+    border: 3px solid #666A73;
 }
-input[type=radio]{
+
+input[type=radio] {
     float: left;
 }
-span{
+
+span {
     margin-right: calc(100% - 110px);
-    font-family: 'Open Sans', sans-serif;   
+    font-family: 'Open Sans', sans-serif;
 }
+
 textarea {
     float: left;
     width: 95%;
@@ -427,40 +432,47 @@ footer a {
     padding-right: 6px;
 }
 
-.navigation li, .navigation a{
+.navigation li,
+.navigation a {
     height: 80px;
     width: 50px;
     margin-right: 50px;
     display: inline-block;
 }
-.home a{
+
+.home a {
     background: url(../images/house.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 50px;
     left 0;
 }
-.home a:hover{
+
+.home a:hover {
     background: url(../images/house2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.close a{
+
+.close a {
     background: url(../images/close2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.close a:hover{
+
+.close a:hover {
     background: url(../images/close1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.magic a{
+
+.magic a {
     background: url(../images/magic1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.magic a:hover{
+
+.magic a:hover {
     background: url(../images/magic2.png);
     background-repeat: no-repeat;
     background-size: contain;
