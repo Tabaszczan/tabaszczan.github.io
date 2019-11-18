@@ -1,31 +1,15 @@
-function validateForm() {
-   checkString(document.forms["myForm"]["imie"].value, "Złe imie");
+function validateform() {
+    var imie = document.myForm.imie.value;
 
-}
-
-function isWhiteSpace(str) {
-    var ws = "\t\n\r ";
-    for (i = 0; i < str.length; i++) {
-        var c = str.charAt(i);
-        if (ws.indexOf(c) > -1) {
-            return true;
-        }
-    }
-    return false;
-}
-function isEmpty(str, msg){
-   if (str == "") {
-        alert(msg);
-        return false;
-    }  
-}
-function checkString(str, msg) {
-    if (str == "") {
-        alert(msg);
-        return false;
-    } else if (isWhiteSpace(str)) {
-        alert(msg)
+    if (imie == null || imie == "") {
+        alert("Imie nie moze byc puste");
         return false;
     }
-}
+    var x = document.myForm.usermail.value;
+    var atposition = x.indexOf("@");
+    var dotposition = x.lastIndexOf(".");
+    if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+        alert("Podaj właściwy adres email \n pozycja @:" + atposition + "\n pozycja kropki:" + dotposition);
+        return false;
+    }
 }

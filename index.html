@@ -105,32 +105,38 @@
         </section>
         <section id="kontakt" class="kontakt">
             <h2>Chcesz zadać mi pytanie? Śmiało!</h2>
-            <form name="myForm" action="../other.html" method="get">
+            <form name="myForm" action="#" method="get" onsubmit="return validateform()">
                 <label for="nazwa">
                     <abbr title="required">*</abbr>Imie:
                 </label><br>
-                <input type="text" name="imie" id="nazwa" tabindex="1" placeholder="Imie"><br><br><br>
+                <input type="text" name="imie" id="nazwa" tabindex="1" placeholder="Imie" required><br><br><br>
                 <label for="mail">
                     <abbr title="required">*</abbr>Email:
                 </label><br>
-                <input type="email" name="usermail" id="mail" tabindex="2" placeholder="Email"><br><br><br>
+                <input type="email" name="usermail" id="mail" tabindex="2" placeholder="Email" required><br><br><br>
                 <label for="country">
                     <abbr title="required">*</abbr>Kraj
                 </label><br>
-                <select id="country" name="country" tabindex="3">
+                <select id="country" name="country" tabindex="3" required>
                     <option value="polska">Polska</option>
                     <option value="niemcy">Niemcy</option>
                     <option value="holandia">Holandia</option>
                 </select><br><br><br>
                 <label for="plec">
-                    <abbr title="required">*</abbr>Plec:
+                    Plec:
                 </label><br>
-                <input type="radio" name="kobieta" id="kobieta" tabindex="4"><span class="plec">Kobieta</span><br><br>
-                <input type="radio" name="mezczyzna" id="mezczyzna" tabindex="5"><span class="plec">Mężczyzna</span><br><br>
+                <input type="radio" name="kobieta" id="kobieta" tabindex="4" >
+                <label for="kobieta">
+                    <span class="plec">Kobieta</span>
+                </label><br><br>
+                <input type="radio" name="mezczyzna" id="mezczyzna" tabindex="5">
+                <label for="mezczyzna">
+                    <span class="plec">Mężczyzna</span>
+                </label><br><br>
                 <label for="mess">
                     <abbr title="required">*</abbr>Wiadomość:
                 </label><br>
-                <textarea name="Wiadomosc" id="mess" rows="15" tabindex="6" placeholder="Napisz swoją wiadomość tutaj"></textarea>
+                <textarea name="Wiadomosc" id="mess" rows="15" tabindex="6" placeholder="Napisz swoją wiadomość tutaj" required></textarea>
                 <input type="submit" name="Submit" value="Wyślij!" onclick="" />
             </form>
         </section>
