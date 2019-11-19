@@ -1,3 +1,4 @@
+@import url(normalize.css);
 html,
 body,
 div,
@@ -86,7 +87,6 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-@import url(normalize.css);
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -270,7 +270,7 @@ h3 {
 
 .tekst ul li:hover {
     list-style-image: url(../images/strzalka1.png);
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .tekst ol {
