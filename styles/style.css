@@ -86,7 +86,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-
+@import url(normalize.css);
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -430,50 +430,4 @@ footer a {
     text-decoration: none;
     color: black;
     padding-right: 6px;
-}
-
-.navigation li,
-.navigation a {
-    height: 80px;
-    width: 50px;
-    margin-right: 50px;
-    display: inline-block;
-}
-
-.home a {
-    background: url(../images/house.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50px;
-    left 0;
-}
-
-.home a:hover {
-    background: url(../images/house2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.close a {
-    background: url(../images/close2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.close a:hover {
-    background: url(../images/close1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.magic a {
-    background: url(../images/magic1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.magic a:hover {
-    background: url(../images/magic2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
