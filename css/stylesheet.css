@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Open Sans LightItalic';
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+body {
+    font-family: 'Open Sans Regular', sans-serif;
+}
+
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+header{
+    color: #F2F2F2;
+}
+.wizytowka a:hover{
+    text-decoration: none;
+}
+#omnie{
+    background-color: #eef0fb;
+}
+#omnie article h2 
+{
+    font-family: 'Open Sans Bold', sans-serif;
+}
+#omnie article span{
+    font-family: 'Open Sans LightItalic', sans-serif;
+}
+#omnie article p{
+    font-family: 'Open Sans Light', sans-serif;
+    line-height: 1.7;
+}

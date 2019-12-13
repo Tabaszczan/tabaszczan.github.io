@@ -1,155 +1,133 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl">
 
 <head>
     <meta charset="utf-8">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
-    <title>Mateusz Podolak</title>
-    <meta name="author" content="Mateusz Podolak">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Strona o mnie">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/x-icon" href="images/icons8-m-26.png" />
+    <meta name="author" content="Mateusz Podolak">
+    <link rel="icon" href="img/icons8-m-26.png">
+    <title>Mateusz Podolak | Portfolio</title>
+
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place your stylesheet here-->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/d88d92615e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="#" target="_self">
-            MATEUSZ PODOLAK
-        </a>
-        <ul class="breadcrumb">
-            <li><a href="#omnie">O MNIE</a></li>
-            <li><a href="#projekty">PROJEKTY</a></li>
-            <li><a href="#kontakt">KONTAKT</a></li>
-            <li><a href="other.html">RÓŻNOŚCI</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="omnie" class="omnie">
-            <div class="tekst">
-                <h1>JESTEM MATEUSZ PODOLAK</h1>
-                <h2>A TO MOJE PORTFOLIO</h2>
+
+
+    <!--Main Navigation-->
+    <header class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-9 p-0">
+                <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0D0D0D;">
+                    <a class="navbar-toggler" href="#" style="color: #F2F2F2;">Mateusz Podolak</a>
+
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#omnie">O MNIE
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#umiejetnosci">UMIEJĘTNOŚCI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projekty">PROJEKTY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakt">KONTAKT</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="parallax-window d-flex align-items-end" data-parallax="scroll" data-image-src="img/BG.jpg">
+                    <div class=" m-5 p-5">
+                        <span class="text-monospace font-weight-light h3">CZEŚĆ, JESTEM</span>
+                        <h1 class="display-1 font-weight-bolder">Mateusz Podolak.</h1>
+                        Student, Gracz, Programista.
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="projekty" class="projekty">
-            <h2>PROJEKTY</h2>
-            <article class="pierwszyA">
-                <h3>POCZĄTEK TWORZENIA CZEGOŚ SWOJEGO</h3>
-                <video width="1000" autoplay loop controls>
-                    <source src="videos/filmProb.webm" type="video/webm">
-                    Twoja przeglądarka nie wspiera HTML5 wideo.
-                </video>
-                <div class="tekst">
-                    <h4>TO NA RAZIE NIE MA TYTUŁU</h4>
-                    <p>
-                        Twór ten ma być grą w której będziemy przeskakiwać przeszkody coś na wzór dinozałra z Google Chrome jak nie mamy internetu.
+            <div class="col-lg wizytowka" style="background-color: #0D0D0D;">
+                <div class="text-center mt-5 mb-5">
+                    <img src="img/face.jpg" class="rounded-circle mx-auto d-block" alt="moja twarz">
+                    <p class="h5 mb-5 mt-5 font-weight-bolder">Mateusz Podolak</p>
+                    <p class="mb-0">BackEnd Developer.</p>
+                    <p class="mb-0">Olsztyn, Polska</p>
+                    <p class="mt-5 pt-5">
+                        <a class="text-reset text-decoration-none" href="mailto:mati.pooo@gmail.com"> mati.pooo@gmail.com</a>
                     </p>
-                    <p>
-                        Na ten moment stworzone rzeczy to:
-                    </p>
-                    <ul>
-                        <li> Poruszanie się gracza</li>
-                        <li>Wiele skoków z możliwością zmiany ich ilości</li>
-                        <li>Zablokowanie kamery</li>
-                        <li>Tło które się porusza dla efektu ruchu</li>
-                    </ul>
-
-
-                    <p>
-                        Rzeczy do zrobienia jest za dużo żeby wypisać je w prostej liście. Grafiki robione ręcznie zajmują jednak dużo czasu z powodu braku umiejętności tworzenia grafik.
-                    </p>
+                    <a class="text-reset text-decoration-none mr-4" href="https://www.facebook.com/Tabaszczan">
+                        <i class="fab fa-facebook-square" style='font-size:24px'></i>
+                    </a>
+                    <a class="text-reset text-decoration-none mr-4" href="https://www.facebook.com/Tabaszczan">
+                        <i class="fab fa-github-square" style='font-size:24px'></i>
+                    </a>
+                    <a class="text-reset text-decoration-none" href="https://github.com/tabaszczan">
+                        <i class="fab fa-instagram" style='font-size:24px'></i>
+                    </a>
                 </div>
+            </div>
+        </div>
+    </header>
+    <!--Main layout-->
+    <main>
+        <section id="omnie">
+            <article class="container pt-5">
+                <h2 class="pt-5 font-weight-bolder">O mnie</h2>
+                <span class="h5">Kilka słów</span>
+                <p class="mt-5 pb-5 h4">
+                    Mam na imię Mateusz i jestem studentem III roku informatyki, kierunek: Inżynieria Systemów Informatycznych. Przyszły programista BackEndowy, który jest ciekawy i zachwycony możliwościami jakie daje nam programowanie i przetwarzanie danych. Z natury jestem spokojnym i skrytym człowiekiem jednak starający się otworzyć.
+                </p>
             </article>
-            <div style="clear: both;"></div>
-            <article class="drugiA">
-                <h3>ALGORYTM A* W PYTHON</h3>
-                <div class="tekst">
-                    <h4>JAK TO DZIAŁA I CO TO JEST</h4>
-                    <p>
-                        Algorytm A* – algorytm heurystyczny znajdowania najkrótszej ścieżki w grafie ważonym z dowolnego wierzchołka do wierzchołka spełniającego określony warunek zwany testem celu. Algorytm jest zupełny i optymalny, w tym sensie, że znajduje ścieżkę, jeśli tylko taka istnieje, i przy tym jest to ścieżka najkrótsza. (<a href="https://pl.wikipedia.org/wiki/Algorytm_A*">Wikipedia</a>)
-                    </p>
-                    <p>
-                        Czyli w skrócie szukamy optymalnej ścieżki z punktu A do punktu B.
-                    </p>
-                    <h4>ZAŁOŻENIA I KROKI ALGORYTMU</h4>
-                    <ol>
-                        <li>Ustalamy sposób poruszania się, koszt jego poszczególnych ruchów oraz kolejność przeszukiwania pól wokół aktualnej pozycji.</li>
-                        <li>Dobieramy heurystykę h, spełniająca warunek dopuszczalności.</li>
-                        <li>Uzgadniamy sposoby rozwiązywania konfliktów, powstających podczas eksploracji siatki.</li>
-                        <li>Wskazujemy punkt startowy i docelowy.</li>
-                        <li> Tworzymy dwie pomocnicze listy, listę otwartą inicjowaną zborem pustym, która będzie zawierała kratki aktualnie rozważane jako pola do ekspansji oraz listę zamkniętą inicjowaną polem startowym, do której trafią pola odwiedzone, znikające jednocześnie z listy otwartej.</li>
-                        <li>Kratki otaczające pole ostatnio dodane do listy zamkniętej, które możemy odwiedzić trafiają na listę otwartą i zachowują informację o kratce rodzicu, za pośrednictwem, której trafiły na listę otwartą; wyliczana jest dla nich wartość funkcji f, w przypadku gdy już posiadają tę wartość obliczoną za pośrednictwem innego pola dodanego wcześniej do listy zamkniętej, porównujemy wyliczaną wartość z aktualną i zmieniamy rodzica w przypadku gdy oszacowany koszt f dotarcia do celu jest mniejszy od poprzedniego.</li>
-                        <li>Do listy zamkniętej trafia kratka z listy otwartej, której wartość f jest najmniejsza (konflikty rozwiązywane są hierarchiczne, wybieramy spośród kratek o tym samym oszacowaniu f, pole odwiedzone najpóźniej).</li>
-                        <li>Jeżeli cel nie został osiągnięty i lista otwarta zawiera przynajmniej jeden element wykonujemy skok do kroku 6.</li>
-                        <li>Algorytm może zakończyć się dwoma scenariuszami:
-                            <ol type="a">
-                                <li>jeżeli cel zostałosiągnięty, wracamy wstecz po kolejnych kratkach rodzicach do kratki start, wyznaczając w ten sposób optymalną ścieżkę od startu do celu,</li>
-                                <li> gdy lista otwarta nie zawiera żadnego elementu a cel nie został osiągnięty, zwracany jest komunikat o niemożliwości dotarcia do celu.</li>
-                            </ol>
-                        </li>
-                    </ol>
-                    <h4>PRZYKŁAD OBRAZKOWY</h4>
-                    <img src="images/AstarExample.gif" alt="Przykład działania algorytmu A* dla grafu, którego wierzchołkami są miasta, wagami krawędzi odległości drogowe, a heurystyka h(x) jest odległością w linii prostej. Zielony – wierzchołek początkowy, niebieski – wierzchołek docelowy"><br>
-                    <span style="font-size: 10px;">
-                        żródło <a href="https://pl.wikipedia.org/wiki/Algorytm_A*">Wikipedia</a>
-                    </span>
-                </div>
-                <div class="kod">
-                    <script src="https://gist.github.com/Tabaszczan/d1bb1d69eb19add1e5d41343a2ec4489.js"></script>
-                </div>
-            </article>
-            <div style="clear: both;"></div>
 
         </section>
-        <section id="kontakt" class="kontakt">
-            <h2>Chcesz zadać mi pytanie? Śmiało!</h2>
-            <form name="myForm" action="#" method="get" onsubmit="return validateform()">
-                <label for="nazwa">
-                    <abbr title="required">*</abbr>Imie:
-                </label><br>
-                <input type="text" name="imie" id="nazwa" tabindex="1" placeholder="Imie" required><br><br><br>
-                <label for="mail">
-                    <abbr title="required">*</abbr>Email:
-                </label><br>
-                <input type="email" name="usermail" id="mail" tabindex="2" placeholder="Email" required><br><br><br>
-                <label for="country">
-                    <abbr title="required">*</abbr>Kraj
-                </label><br>
-                <select id="country" name="country" tabindex="3">
-                    <option value="polska">Polska</option>
-                    <option value="niemcy">Niemcy</option>
-                    <option value="holandia">Holandia</option>
-                </select><br><br><br>
-                <label>Plec:</label><br>
-                <input type="radio" name="kobieta" id="kobieta" tabindex="4">
-                <label for="kobieta">
-                    <span class="plec">Kobieta</span>
-                </label><br><br>
-                <input type="radio" name="mezczyzna" id="mezczyzna" tabindex="5">
-                <label for="mezczyzna">
-                    <span class="plec">Mężczyzna</span>
-                </label><br><br>
-                <label for="mess">
-                    <abbr title="required">*</abbr>Wiadomość:
-                </label><br>
-                <textarea name="Wiadomosc" id="mess" rows="15" tabindex="6" placeholder="Napisz swoją wiadomość tutaj" required></textarea>
-                <input type="submit" name="Submit" value="Wyślij!" onclick="" />
-            </form>
+        <section id="umiejetnosci">
+        </section>
+        <section id="projekty">
+        </section>
+        <section id="kontakt">
         </section>
     </main>
+    <!--Main layout-->
+
+    <!--Footer-->
     <footer>
-        <a href="https://www.facebook.com/Tabaszczan" target="_blank">
-            <img src="images/facebook.png" alt="ikona facebooka">
-        </a>
-        <a href="https://www.instagram.com/tabaszczan/" target="_blank">
-            <img src="images/instagram.png" alt="ikona instagrama">
-        </a>
-        <a href="https://github.com/Tabaszczan" target="_blank">
-            <img src="images/github.png" alt="ikona githuba">
-        </a>
-        <p><a href="mailto:mati.pooo@gmail.com">© 2019 przez Mateusz Podolak</a></p>
+
     </footer>
-    <script src="/scripts/script.js"></script>
+    <!--Footer-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
+
 </body></html>

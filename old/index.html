@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <title>Mateusz Podolak</title>
+    <meta name="author" content="Mateusz Podolak">
+    <meta name="description" content="Strona o mnie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icons8-m-26.png" />
+</head>
+
+<body>
+    <nav>
+        <a href="#" target="_self">
+            MATEUSZ PODOLAK
+        </a>
+        <ul class="breadcrumb">
+            <li><a href="#omnie">O MNIE</a></li>
+            <li><a href="#projekty">PROJEKTY</a></li>
+            <li><a href="#kontakt">KONTAKT</a></li>
+            <li><a href="other.html">RÓŻNOŚCI</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="omnie" class="omnie">
+            <div class="tekst">
+                <h1>JESTEM MATEUSZ PODOLAK</h1>
+                <h2>A TO MOJE PORTFOLIO</h2>
+            </div>
+        </section>
+        <section id="projekty" class="projekty">
+            <h2>PROJEKTY</h2>
+            <article class="pierwszyA">
+                <h3>POCZĄTEK TWORZENIA CZEGOŚ SWOJEGO</h3>
+                <video width="1000" autoplay loop controls>
+                    <source src="videos/filmProb.webm" type="video/webm">
+                    Twoja przeglądarka nie wspiera HTML5 wideo.
+                </video>
+                <div class="tekst">
+                    <h4>TO NA RAZIE NIE MA TYTUŁU</h4>
+                    <p>
+                        Twór ten ma być grą w której będziemy przeskakiwać przeszkody coś na wzór dinozałra z Google Chrome jak nie mamy internetu.
+                    </p>
+                    <p>
+                        Na ten moment stworzone rzeczy to:
+                    </p>
+                    <ul>
+                        <li> Poruszanie się gracza</li>
+                        <li>Wiele skoków z możliwością zmiany ich ilości</li>
+                        <li>Zablokowanie kamery</li>
+                        <li>Tło które się porusza dla efektu ruchu</li>
+                    </ul>
+
+
+                    <p>
+                        Rzeczy do zrobienia jest za dużo żeby wypisać je w prostej liście. Grafiki robione ręcznie zajmują jednak dużo czasu z powodu braku umiejętności tworzenia grafik.
+                    </p>
+                </div>
+            </article>
+            <div style="clear: both;"></div>
+            <article class="drugiA">
+                <h3>ALGORYTM A* W PYTHON</h3>
+                <div class="tekst">
+                    <h4>JAK TO DZIAŁA I CO TO JEST</h4>
+                    <p>
+                        Algorytm A* – algorytm heurystyczny znajdowania najkrótszej ścieżki w grafie ważonym z dowolnego wierzchołka do wierzchołka spełniającego określony warunek zwany testem celu. Algorytm jest zupełny i optymalny, w tym sensie, że znajduje ścieżkę, jeśli tylko taka istnieje, i przy tym jest to ścieżka najkrótsza. (<a href="https://pl.wikipedia.org/wiki/Algorytm_A*">Wikipedia</a>)
+                    </p>
+                    <p>
+                        Czyli w skrócie szukamy optymalnej ścieżki z punktu A do punktu B.
+                    </p>
+                    <h4>ZAŁOŻENIA I KROKI ALGORYTMU</h4>
+                    <ol>
+                        <li>Ustalamy sposób poruszania się, koszt jego poszczególnych ruchów oraz kolejność przeszukiwania pól wokół aktualnej pozycji.</li>
+                        <li>Dobieramy heurystykę h, spełniająca warunek dopuszczalności.</li>
+                        <li>Uzgadniamy sposoby rozwiązywania konfliktów, powstających podczas eksploracji siatki.</li>
+                        <li>Wskazujemy punkt startowy i docelowy.</li>
+                        <li> Tworzymy dwie pomocnicze listy, listę otwartą inicjowaną zborem pustym, która będzie zawierała kratki aktualnie rozważane jako pola do ekspansji oraz listę zamkniętą inicjowaną polem startowym, do której trafią pola odwiedzone, znikające jednocześnie z listy otwartej.</li>
+                        <li>Kratki otaczające pole ostatnio dodane do listy zamkniętej, które możemy odwiedzić trafiają na listę otwartą i zachowują informację o kratce rodzicu, za pośrednictwem, której trafiły na listę otwartą; wyliczana jest dla nich wartość funkcji f, w przypadku gdy już posiadają tę wartość obliczoną za pośrednictwem innego pola dodanego wcześniej do listy zamkniętej, porównujemy wyliczaną wartość z aktualną i zmieniamy rodzica w przypadku gdy oszacowany koszt f dotarcia do celu jest mniejszy od poprzedniego.</li>
+                        <li>Do listy zamkniętej trafia kratka z listy otwartej, której wartość f jest najmniejsza (konflikty rozwiązywane są hierarchiczne, wybieramy spośród kratek o tym samym oszacowaniu f, pole odwiedzone najpóźniej).</li>
+                        <li>Jeżeli cel nie został osiągnięty i lista otwarta zawiera przynajmniej jeden element wykonujemy skok do kroku 6.</li>
+                        <li>Algorytm może zakończyć się dwoma scenariuszami:
+                            <ol type="a">
+                                <li>jeżeli cel zostałosiągnięty, wracamy wstecz po kolejnych kratkach rodzicach do kratki start, wyznaczając w ten sposób optymalną ścieżkę od startu do celu,</li>
+                                <li> gdy lista otwarta nie zawiera żadnego elementu a cel nie został osiągnięty, zwracany jest komunikat o niemożliwości dotarcia do celu.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h4>PRZYKŁAD OBRAZKOWY</h4>
+                    <img src="images/AstarExample.gif" alt="Przykład działania algorytmu A* dla grafu, którego wierzchołkami są miasta, wagami krawędzi odległości drogowe, a heurystyka h(x) jest odległością w linii prostej. Zielony – wierzchołek początkowy, niebieski – wierzchołek docelowy"><br>
+                    <span style="font-size: 10px;">
+                        żródło <a href="https://pl.wikipedia.org/wiki/Algorytm_A*">Wikipedia</a>
+                    </span>
+                </div>
+                <div class="kod">
+                    <script src="https://gist.github.com/Tabaszczan/d1bb1d69eb19add1e5d41343a2ec4489.js"></script>
+                </div>
+            </article>
+            <div style="clear: both;"></div>
+
+        </section>
+        <section id="kontakt" class="kontakt">
+            <h2>Chcesz zadać mi pytanie? Śmiało!</h2>
+            <form name="myForm" action="#" method="get" onsubmit="return validateform()">
+                <label for="nazwa">
+                    <abbr title="required">*</abbr>Imie:
+                </label><br>
+                <input type="text" name="imie" id="nazwa" tabindex="1" placeholder="Imie" required><br><br><br>
+                <label for="mail">
+                    <abbr title="required">*</abbr>Email:
+                </label><br>
+                <input type="email" name="usermail" id="mail" tabindex="2" placeholder="Email" required><br><br><br>
+                <label for="country">
+                    <abbr title="required">*</abbr>Kraj
+                </label><br>
+                <select id="country" name="country" tabindex="3">
+                    <option value="polska">Polska</option>
+                    <option value="niemcy">Niemcy</option>
+                    <option value="holandia">Holandia</option>
+                </select><br><br><br>
+                <label>Plec:</label><br>
+                <input type="radio" name="kobieta" id="kobieta" tabindex="4">
+                <label for="kobieta">
+                    <span class="plec">Kobieta</span>
+                </label><br><br>
+                <input type="radio" name="mezczyzna" id="mezczyzna" tabindex="5">
+                <label for="mezczyzna">
+                    <span class="plec">Mężczyzna</span>
+                </label><br><br>
+                <label for="mess">
+                    <abbr title="required">*</abbr>Wiadomość:
+                </label><br>
+                <textarea name="Wiadomosc" id="mess" rows="15" tabindex="6" placeholder="Napisz swoją wiadomość tutaj" required></textarea>
+                <input type="submit" name="Submit" value="Wyślij!" onclick="" />
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.facebook.com/Tabaszczan" target="_blank">
+            <img src="images/facebook.png" alt="ikona facebooka">
+        </a>
+        <a href="https://www.instagram.com/tabaszczan/" target="_blank">
+            <img src="images/instagram.png" alt="ikona instagrama">
+        </a>
+        <a href="https://github.com/Tabaszczan" target="_blank">
+            <img src="images/github.png" alt="ikona githuba">
+        </a>
+        <p><a href="mailto:mati.pooo@gmail.com">© 2019 przez Mateusz Podolak</a></p>
+    </footer>
+    <script src="/scripts/script.js"></script>
+</body></html>
