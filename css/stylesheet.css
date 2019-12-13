@@ -16,6 +16,7 @@
 }
 body {
     font-family: 'Open Sans Regular', sans-serif;
+    background-color: #EEEFF7;
 }
 
 
@@ -23,20 +24,20 @@ body {
     min-height: 600px;
     background: transparent;
 }
-header{
-    color: #F2F2F2;
+header, footer{
+    color: #EEEFF7;
 }
 .wizytowka a:hover{
     text-decoration: none;
 }
 #omnie{
-    background-color: #eef0fb;
+    background-color: #afdadc;
 }
-#omnie article h2 
+section article h2 
 {
     font-family: 'Open Sans Bold', sans-serif;
 }
-#omnie article span{
+section article span{
     font-family: 'Open Sans LightItalic', sans-serif;
 }
 #omnie article p{
