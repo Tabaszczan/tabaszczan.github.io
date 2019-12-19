@@ -2,17 +2,23 @@
     font-family: 'Open Sans Regular';
     src: url(../fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Open Sans Bold';
     src: url(../fonts/OpenSans-Bold.ttf);
 }
+
 @font-face {
     font-family: 'Open Sans LightItalic';
     src: url(../fonts/OpenSans-LightItalic.ttf);
 }
+
 @font-face {
     font-family: 'Open Sans Light';
     src: url(../fonts/OpenSans-Light.ttf);
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
     font-family: 'Open Sans Regular', sans-serif;
@@ -24,23 +30,34 @@ body {
     min-height: 600px;
     background: transparent;
 }
-header, footer{
+
+header,
+footer {
     color: #EEEFF7;
 }
-.wizytowka a:hover{
+
+.wizytowka a:hover {
     text-decoration: none;
 }
-#omnie{
+
+#omnie {
     background-color: #afdadc;
 }
-section article h2 
-{
+
+section article h2 {
     font-family: 'Open Sans Bold', sans-serif;
 }
-section article span{
+
+section article span {
     font-family: 'Open Sans LightItalic', sans-serif;
 }
-#omnie article p{
+
+#omnie article p {
     font-family: 'Open Sans Light', sans-serif;
     line-height: 1.7;
+}
+
+#umiejetnosci .progress-bar {
+    height: 20px;
+    background-color: #445878;
 }
