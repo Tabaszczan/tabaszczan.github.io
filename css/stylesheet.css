@@ -17,9 +17,11 @@
     font-family: 'Open Sans Light';
     src: url(../fonts/OpenSans-Light.ttf);
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Open Sans Regular', sans-serif;
     background-color: #EEEFF7;
@@ -60,4 +62,8 @@ section article span {
 #umiejetnosci .progress-bar {
     height: 20px;
     background-color: #445878;
+}
+.gist .blob-wrapper.data {
+   max-height:350px;
+   overflow:auto;
 }
