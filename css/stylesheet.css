@@ -67,3 +67,31 @@ section article span {
    max-height:350px;
    overflow:auto;
 }
+.jconfirm.jconfirm-my-theme .jconfirm-bg{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    background-color: #445878;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box{
+    box-shadow: 3px 3px 1px lightgray;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-closeIcon{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c{
+    font-size: 40px;
+    font-family: 'Open Sans Bold', sans-serif;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content-pane{
+    font-family: 'Open Sans LightItalic', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons{
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 25px;
+    float: right;
+}
